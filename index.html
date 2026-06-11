@@ -207,32 +207,6 @@ footer p{font-size:0.78rem;color:#8aaac8}
 .broker-item p{font-size:0.82rem;color:#4a6080;line-height:1.65}
 .broker-name{font-size:1rem;font-weight:800;color:#2563eb;margin-bottom:0.25rem}
 
-
-/* COPY TRADING */
-.copy-wrap{background:linear-gradient(135deg,#0f172a 0%,#1e3a6e 100%);border-radius:20px;padding:3rem;margin-top:2rem;position:relative;overflow:hidden}
-.copy-wrap::before{content:'';position:absolute;top:-60px;right:-60px;width:200px;height:200px;border-radius:50%;border:1px solid rgba(37,99,235,0.2)}
-.copy-wrap::after{content:'';position:absolute;top:-20px;right:-20px;width:120px;height:120px;border-radius:50%;border:1px solid rgba(37,99,235,0.15)}
-.copy-inner{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center;position:relative;z-index:1}
-@media(max-width:680px){.copy-inner{grid-template-columns:1fr}}
-.copy-badge{display:inline-flex;align-items:center;gap:6px;background:rgba(37,99,235,0.2);border:1px solid rgba(37,99,235,0.35);border-radius:999px;padding:0.3rem 0.9rem;font-size:0.72rem;font-weight:600;color:#93bbfd;margin-bottom:1rem;letter-spacing:1px;text-transform:uppercase}
-.copy-wrap h2{font-size:clamp(1.6rem,3vw,2.2rem);font-weight:800;color:#fff;letter-spacing:-1px;line-height:1.1;margin-bottom:1rem}
-.copy-wrap h2 i{font-family:'Lora',serif;font-style:italic;font-weight:600;color:#60a5fa}
-.copy-wrap p{font-size:0.92rem;color:rgba(255,255,255,0.6);line-height:1.8;margin-bottom:1.5rem}
-.copy-steps{display:flex;flex-direction:column;gap:0.85rem}
-.copy-step{display:flex;align-items:flex-start;gap:0.85rem}
-.copy-step-num{width:26px;height:26px;border-radius:50%;background:rgba(37,99,235,0.3);border:1px solid rgba(37,99,235,0.5);display:flex;align-items:center;justify-content:center;font-size:0.72rem;font-weight:700;color:#93bbfd;flex-shrink:0;margin-top:1px}
-.copy-step-text{font-size:0.85rem;color:rgba(255,255,255,0.7);line-height:1.6}
-.copy-step-text strong{color:#fff}
-.copy-cards{display:flex;flex-direction:column;gap:0.75rem}
-.copy-card{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:1.25rem 1.5rem;display:flex;align-items:flex-start;gap:1rem}
-.copy-card-ico{width:36px;height:36px;border-radius:9px;background:rgba(37,99,235,0.25);display:flex;align-items:center;justify-content:center;flex-shrink:0}
-.copy-card-ico svg{width:16px;height:16px}
-.copy-card h4{font-size:0.88rem;font-weight:700;color:#fff;margin-bottom:0.25rem}
-.copy-card p{font-size:0.8rem;color:rgba(255,255,255,0.5);line-height:1.6;margin:0}
-.copy-cta{display:inline-flex;align-items:center;gap:8px;background:#2563eb;color:#fff;font-weight:700;font-size:0.88rem;padding:0.8rem 1.6rem;border-radius:10px;text-decoration:none;margin-top:1.5rem;transition:all 0.2s;box-shadow:0 4px 16px rgba(37,99,235,0.35)}
-.copy-cta:hover{background:#1d4ed8;transform:translateY(-2px)}
-.copy-disclaimer{font-size:0.72rem;color:rgba(255,255,255,0.25);margin-top:0.75rem;line-height:1.6}
-
 </style>
 </head>
 <body>
@@ -471,50 +445,6 @@ document.addEventListener('DOMContentLoaded', initTicker);
 </div>
 
 
-<!-- COPY TRADING -->
-<div id="copy-trading">
-<div class="sec">
-  <div class="sec-head">
-    <div class="stag">Próximamente</div>
-    <div class="stitle">Tienes capital.<br><i>Nosotros lo ponemos a trabajar.</i></div>
-    <p class="ssub">Para quienes quieren estar en el mercado pero prefieren no operar ellos mismos.</p>
-  </div>
-  <div class="copy-wrap">
-    <div class="copy-inner">
-      <div>
-        <div class="copy-badge">Copy Trading · Próximo lanzamiento</div>
-        <h2>Tu capital.<br><i>Nuestra operativa.</i></h2>
-        <p>Si tienes capital disponible pero no el tiempo o la experiencia para operar, pronto podrás conectar tu cuenta y copiar automáticamente todas nuestras operaciones en tiempo real. Sin hacer nada. Sin tomar decisiones.</p>
-        <div class="copy-steps">
-          <div class="copy-step"><div class="copy-step-num">1</div><div class="copy-step-text"><strong>Abres tu cuenta</strong> en VT Markets con tu propio capital, que permanece siempre bajo tu control.</div></div>
-          <div class="copy-step"><div class="copy-step-num">2</div><div class="copy-step-text"><strong>Te conectas al canal</strong> de copy trading de Cash4XAU. Tus operaciones se replican automáticamente.</div></div>
-          <div class="copy-step"><div class="copy-step-num">3</div><div class="copy-step-text"><strong>El broker gestiona</strong> la distribución de resultados. Tú ves crecer tu cuenta sin operar.</div></div>
-        </div>
-        <a href="https://wa.me/34614341613" target="_blank" class="copy-cta">Quiero más información →</a>
-        <div class="copy-disclaimer">Servicio en desarrollo. El copy trading implica riesgo de pérdida de capital. Tu dinero permanece siempre en tu propia cuenta de broker. Cash4XAU no gestiona fondos de terceros directamente.</div>
-      </div>
-      <div class="copy-cards">
-        <div class="copy-card">
-          <div class="copy-card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-          <div><h4>Tu capital, siempre tuyo</h4><p>El dinero nunca sale de tu cuenta de broker. Tú mantienes el control total en todo momento.</p></div>
-        </div>
-        <div class="copy-card">
-          <div class="copy-card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
-          <div><h4>Mismas operaciones, mismo resultado</h4><p>Copias exactamente lo que opera Atlas en tiempo real. Sin retrasos, sin intermediarios.</p></div>
-        </div>
-        <div class="copy-card">
-          <div class="copy-card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
-          <div><h4>Sin dedicarle tiempo</h4><p>No necesitas estar pendiente del mercado. El sistema opera solo mientras tú haces tu vida.</p></div>
-        </div>
-        <div class="copy-card">
-          <div class="copy-card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
-          <div><h4>Sin coste fijo mensual</h4><p>Este servicio no tendrá cuota mensual. Solo se aplica una comisión sobre beneficios generados.</p></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
 
 <div class="alt" id="contacto">
 <div class="sec">
